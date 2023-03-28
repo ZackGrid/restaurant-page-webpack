@@ -1,1 +1,4 @@
-console.log('Testando, testando, 1, 2, 3...');
+import './style.css';
+import populateHome from './home';
+
+populateHome();
