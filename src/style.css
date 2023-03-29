@@ -6,9 +6,9 @@
 
 :root {
   --white: rgb(250, 245, 245);
-  --main: rgb(219, 62, 0);
+  --main: rgba(241, 97, 39, 0.9);
   --secondary: rgb(64, 137, 233);
-  --grey: rgb(211, 215, 218);
+  --grey: rgb(183, 189, 194);
   --dark-grey: rgb(99, 103, 105);
 }
 
@@ -30,27 +30,24 @@ body {
   background-color: var(--white);
 }
 
-.cosmos,
-.home,
-.menu,
-.about {
+.header p {
   display: flex;
   height: 100%;
   align-items: center;
   padding: 12px;
+  letter-spacing: 1px;
 }
 
-.cosmos:hover,
-.home:hover,
-.menu:hover,
-.about:hover {
+.header p:hover {
   cursor: pointer;
   text-shadow: 3px 3px rgba(39, 50, 75, 0.8);
-  transition: 0.3s ease;
-  background-color: rgba(241, 97, 39, 0.9);
+  transition: 0.5s ease;
+  background-color: var(--main);
+}
 
-
-  /* text-shadow: 0px 0px 5px white; */
+.header p:active {
+  background-color: var(--secondary);
+  transition: none;
 }
 
 .header {
@@ -61,8 +58,32 @@ body {
   color: var(--white);
   background-color: var(--secondary);
   font-weight: bold;
-  font-size: 1.2rem;
-  box-shadow: 0px 5px 10px 1px var(--grey);
+  font-size: 1.4rem;
+  box-shadow: 0px 5px 10px 2px var(--grey);
+}
+
+.order-button {
+  border: none;
+  font: inherit;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: var(--white);
+  background-color: var(--main);
+  padding: 10px;
+  box-shadow: 0px 8px 12px -5px rgb(157, 160, 161);
+  text-shadow: 2px 3px rgba(39, 50, 75, 0.8);
+}
+
+.order-button:hover {
+  cursor: pointer;
+  text-shadow: -3px 4px 2px rgba(19, 26, 43, 0.8);
+  transition: 0.5s ease;
+}
+
+.order-button:active {
+  background-color: var(--secondary);
+  transition: none;
 }
 
 .home-images {
@@ -72,6 +93,10 @@ body {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   background-color: var(--white);
+}
+
+img {
+  box-shadow: 0px 0px 15px 2px var(--grey);
 }
 
 .cosmos-pizza {
@@ -89,18 +114,18 @@ body {
 .call-to-action {
   display: grid;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .cucumber-pizza {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-style: italic;
   color: var(--dark-grey);
 }
 
 .kramer-throw {
   border-radius: 10px;
-  height: 60%;
+  height: 70%;
   justify-self: center;
 }
 

@@ -8,6 +8,8 @@ const populateHome = () => {
   const header = document.createElement('div');
   const footer = document.createElement('div');
   const callToAction = document.createElement('div');
+  const orderButton = document.createElement('button');
+  orderButton.className = 'order-button';
   header.className = 'header';
   footer.className = 'footer';
   callToAction.className = 'call-to-action';
@@ -35,6 +37,10 @@ const populateHome = () => {
   addTextItem('ABOUT', 'about', header);
 
   homeContent.appendChild(header);
+
+  addTextItem('ORDER NOW &#127829', 'order-now', orderButton);
+
+  homeContent.appendChild(orderButton);
 
   addImg(cosmosPizza, 'cosmos-pizza', homeImages);
   addImg(yardPizza, 'yard-pizza', homeImages);
