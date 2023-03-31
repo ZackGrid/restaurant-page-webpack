@@ -144,6 +144,7 @@ img {
 
 .order-form {
   margin: 25px auto;
+  padding: 10px;
   width: clamp(350px, 50%, 800px);
 }
 
@@ -217,4 +218,40 @@ input[type="checkbox"] {
   background-color: var(--white);
   color: var(--dark-grey);
   transition: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .header p {
+    padding: 10px;
+  }
+
+  .header {
+    font-size: 1.1rem;
+  }
+
+  .home-images {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 20px;
+  }
+
+  .cosmos-pizza {
+    width: 100%;
+  }
+
+  .yard-pizza {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .cucumber-pizza {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .kramer-throw {
+    height: 70%;
+  }
 }
