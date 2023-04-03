@@ -23,6 +23,7 @@
 body {
   background-color: var(--grey);
   font-family: 'orkney-medium';
+  width: 100%;
 }
 
 #content {
@@ -346,5 +347,21 @@ input[type="checkbox"] {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 25px;
+  }
+
+  .choose-size {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: flex-start;
+    gap: 10px;
+  }
+
+  .choose-top {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: flex-start;
+    gap: 10px;
   }
 }
