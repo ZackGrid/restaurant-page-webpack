@@ -1,5 +1,5 @@
 
-import { addTextItem, addImg } from "./home";
+import { addTextItem } from "./home";
 
 const newfieldset = (className, legend) => {
 
@@ -12,9 +12,9 @@ const newfieldset = (className, legend) => {
 
 const newInput = (type, name, text, id, checked, field) => {
 
-  const newRadio = document.createElement('div');
-  newRadio.className = id;
-  newRadio.innerHTML =
+  const newElement = document.createElement('div');
+  newElement.className = id;
+  newElement.innerHTML =
     '<input type="' + type + '" '
     + 'name="' + name + '" '
     + 'id="' + id + '" '
@@ -23,7 +23,7 @@ const newInput = (type, name, text, id, checked, field) => {
     + '<label for="' + id + '">'
     + text + '</label>';
 
-  field.appendChild(newRadio);
+  field.appendChild(newElement);
 }
 
 const menuTab = () => {
@@ -47,8 +47,8 @@ const menuTab = () => {
   newInput('radio', 'pizza-size', 'Medium', 'medium', 'checked', chooseSize);
   newInput('radio', 'pizza-size', 'Large', 'large', '', chooseSize);
 
-  newInput('checkbox', 'topping', 'Tomato Sauce', 'tomato-sauce', '', chooseToppings);
-  newInput('checkbox', 'topping', 'Mozzarella', 'mozzarella', '', chooseToppings);
+  newInput('checkbox', 'topping', 'Tomato Sauce', 'tomato-sauce', 'checked', chooseToppings);
+  newInput('checkbox', 'topping', 'Mozzarella', 'mozzarella', 'checked', chooseToppings);
   newInput('checkbox', 'topping', 'Pepperoni', 'pepperoni', '', chooseToppings);
   newInput('checkbox', 'topping', 'Cheddar', 'cheddar', '', chooseToppings);
   newInput('checkbox', 'topping', 'Onions', 'onions', '', chooseToppings);
