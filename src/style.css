@@ -295,6 +295,7 @@ input[type="checkbox"] {
 
   .header {
     font-size: 1rem;
+    width: fit-content;
     grid-template-columns: repeat(4, 1fr);
   }
 
