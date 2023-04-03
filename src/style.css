@@ -301,13 +301,15 @@ input[type="checkbox"] {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     margin: 20px;
+    justify-items: center;
   }
 
   .cosmos-pizza {
-    width: 100%;
+    width: 80%;
   }
 
   .yard-pizza {
+    width: 80%;
     grid-column: auto;
     grid-row: auto;
   }
@@ -319,7 +321,7 @@ input[type="checkbox"] {
   }
 
   .kramer-throw {
-    height: 70%;
+    height: 60%;
   }
 
   .kramer-img {
