@@ -342,7 +342,9 @@ input[type="checkbox"] {
     width: 70%;
   }
 
-  .order-form {
+  fieldset {
     width: 90%;
+    margin: 0 auto;
+    margin-bottom: 25px;
   }
 }
