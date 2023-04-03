@@ -290,11 +290,12 @@ input[type="checkbox"] {
 @media only screen and (max-width: 800px) {
 
   .header p {
-    padding: 8px;
+    padding: 10px;
   }
 
   .header {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .home-images {
