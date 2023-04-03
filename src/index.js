@@ -3,6 +3,7 @@ import populateHome from './home';
 import menuTab from './menu';
 import aboutTab from './about';
 
+// Call the function to create homepage
 populateHome();
 
 const homeImgs = document.querySelector('.home-images');
@@ -11,7 +12,8 @@ const headerBttns = document.querySelectorAll('.header-bttn');
 const footer = document.querySelector('.footer');
 const title = document.querySelector('.title');
 
-
+// Listen to buttons from header options
+// deleting elements and creating tabs accordingly
 headerBttns.forEach(button => button.addEventListener('click', () => {
 
   if (button.className.includes('home') || button.className.includes('cosmos')) {

@@ -1,6 +1,7 @@
 
 import { addTextItem } from "./home";
 
+// Function to create a fieldset and return it
 const newfieldset = (className, legend) => {
 
   const fieldset = document.createElement('fieldset');
@@ -10,6 +11,7 @@ const newfieldset = (className, legend) => {
   return fieldset;
 }
 
+// Function to create an input type and append to a fieldset
 const newInput = (type, name, text, id, checked, field) => {
 
   const newElement = document.createElement('div');
@@ -26,6 +28,7 @@ const newInput = (type, name, text, id, checked, field) => {
   field.appendChild(newElement);
 }
 
+// Create menu/order page using functions from above and the imported addText
 const menuTab = () => {
 
   const homeContent = document.querySelector('#content');

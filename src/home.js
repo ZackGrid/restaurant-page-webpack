@@ -2,6 +2,7 @@ import cosmosPizza from '../img/cosmos-pizza.jpg';
 import yardPizza from '../img/yard-sale-pizza.avif';
 import kramerThrow from '../img/kramer-pizza-throw.gif';
 
+// Function to add text and append to an element
 const addTextItem = (text, className, element) => {
   const item = document.createElement('p');
   item.innerHTML = text;
@@ -9,6 +10,7 @@ const addTextItem = (text, className, element) => {
   element.appendChild(item);
 }
 
+// Function to add images and append to an element
 const addImg = (img, className, element) => {
   const newImg = document.createElement('img');
   newImg.src = img;
@@ -16,6 +18,7 @@ const addImg = (img, className, element) => {
   element.appendChild(newImg);
 }
 
+// Create homepage using functions addText and addImg
 const populateHome = () => {
 
   const homeContent = document.querySelector('#content');
