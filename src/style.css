@@ -341,4 +341,8 @@ input[type="checkbox"] {
   .intern-wanted {
     width: 70%;
   }
+
+  .order-form {
+    width: 90%;
+  }
 }
