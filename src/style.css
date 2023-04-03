@@ -354,7 +354,7 @@ input[type="checkbox"] {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     justify-items: flex-start;
-    gap: 10px;
+    gap: 8px;
   }
 
   .choose-top {
@@ -362,6 +362,7 @@ input[type="checkbox"] {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     justify-items: flex-start;
-    gap: 10px;
+    gap: 8px;
   }
+
 }
