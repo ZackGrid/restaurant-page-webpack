@@ -9,6 +9,7 @@ const homeImgs = document.querySelector('.home-images');
 const callToAction = document.querySelector('.call-to-action');
 const headerBttns = document.querySelectorAll('.header-bttn');
 const footer = document.querySelector('.footer');
+const title = document.querySelector('.title');
 
 
 headerBttns.forEach(button => button.addEventListener('click', () => {
@@ -33,6 +34,7 @@ headerBttns.forEach(button => button.addEventListener('click', () => {
       footer.remove();
     }
 
+    title.textContent = 'Menu - Order';
     document.querySelector('.order-form') ? 0 : menuTab();
   }
 
@@ -49,6 +51,7 @@ headerBttns.forEach(button => button.addEventListener('click', () => {
       footer.remove();
     }
 
+    title.textContent = 'About';
     document.querySelector('.about-tab') ? 0 : aboutTab();
   }
 
