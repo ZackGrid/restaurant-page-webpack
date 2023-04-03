@@ -312,11 +312,11 @@ input[type="checkbox"] {
   }
 
   .cosmos-pizza {
-    width: 80%;
+    width: 90%;
   }
 
   .yard-pizza {
-    width: 80%;
+    width: 90%;
     grid-column: auto;
     grid-row: auto;
   }
@@ -344,7 +344,7 @@ input[type="checkbox"] {
   }
 
   fieldset {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 25px;
   }
