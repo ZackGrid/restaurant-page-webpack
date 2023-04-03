@@ -305,11 +305,11 @@ input[type="checkbox"] {
   }
 
   .cosmos-pizza {
-    width: 80%;
+    width: 75%;
   }
 
   .yard-pizza {
-    width: 80%;
+    width: 75%;
     grid-column: auto;
     grid-row: auto;
   }
@@ -321,7 +321,7 @@ input[type="checkbox"] {
   }
 
   .kramer-throw {
-    height: 60%;
+    height: 50%;
   }
 
   .kramer-img {
